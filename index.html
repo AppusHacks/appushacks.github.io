@@ -1,6 +1,9 @@
 <style>
 
 body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #00003f;
 }
 
@@ -27,7 +30,8 @@ code {
 
 </style>
 
-<h1>Aaditya's Hacks!</h1>
+
+<h1>Aaditya's Tools</h1>
 <p>Listed below are useful scripts that I use.</p>
 <h2>TypingClub</h2>
 
@@ -81,3 +85,14 @@ async function autoPlay() {
 }
 
 autoPlay();</code>
+
+<h2>Allow Text Selection</h2>
+
+<code>(function() {
+  'use strict';
+
+  let style = document.createElement('style');
+  style.innerHTML = '*{ user-select: auto !important; }';
+
+  document.body.appendChild(style);
+})();</code>
